@@ -8,7 +8,7 @@ describe("GET /", ()=> {
         expect(res.body.message).toBe("API Funcionando");
     });
 
-    it("Esperamos que responda página no encontrada", async() => {
+    it("esperamos que responda página no encontrada", async() => {
         const res = await request(app).get("/not_found");
         expect(res.statusCode).toBe(404);
     });
