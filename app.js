@@ -14,24 +14,35 @@ app.get("/not_found", (req, res) => {
 })
 
 app.get("/administradores", (req, res) => {
-    res.status(404).json({ message: "OK", administradores:[
-        {
-            "nombre": "Juan",
-            "apellido": "Quintana",
-            "edad": 25
-        },
-        {
-            "nombre": "Rodrigo",
-            "apellido": "Torres",
-            "edad": 31
-        },
+    res.status(200).json({ message: "Ok", administradores: [
         {
             "nombre": "Juan",
             "apellido": "Suarez",
-            "edad": 30
+            "edad":25
+        },
+        {
+            "nombre": "Maria",
+            "apellido": "Quintana",
+            "edad":25
+        },
+        {
+            "nombre": "Alvaro",
+            "apellido": "Farias",
+            "edad":32
+        },
+        {
+            "nombre": "Anabel",
+            "apellido": "Duquez",
+            "edad":32
+        },
+        {
+            "nombre": "Delia",
+            "apellido": "Estefan",
+            "edad":34
         }
     ],
     total: 5
 });
 })
+
 module.exports = app;
