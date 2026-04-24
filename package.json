@@ -4,7 +4,8 @@
   "description": "Prueba CI - CD Github",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "express": "^5.2.1"
   },
   "devDependencies": {
+    "eslint": "^8.57.1",
     "jest": "^30.3.0",
     "supertest": "^7.2.2"
   }
